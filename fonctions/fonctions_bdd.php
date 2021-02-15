@@ -4,9 +4,11 @@
  * Sert à se connecter à la BDD
  */
 function connectDB() {
+	include_once __DIR__ . '/../config/config_bdd.php';
+	
 	try {
 		// On crée un nouvel objet
-		$truc_muche = new PDO('mysql:host=localhost;dbname=formawave_php_fil_rouge', 'root', '');
+		$truc_muche = new PDO('mysql:host=' . $host . ';dbname=' . $dbName, $user, $password);
 
 		// On le renvoie
 		return $truc_muche;
