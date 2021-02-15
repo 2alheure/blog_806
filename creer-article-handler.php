@@ -30,6 +30,6 @@ if (
 }
 
 else {
-	echo 'Tu as oublié de remplir un champ du formulaire !';
+	header('location: creer-article.php');
 	die;
 }
