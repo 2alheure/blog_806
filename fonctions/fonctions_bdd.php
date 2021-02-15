@@ -6,7 +6,7 @@
 function connectDB() {
 	try {
 		// On crée un nouvel objet
-		$truc_muche = new PDO('mysql:host=locahost;dbname=formawave_php_fil_rouge', 'root', '');
+		$truc_muche = new PDO('mysql:host=localhost;dbname=formawave_php_fil_rouge', 'root', '');
 
 		// On le renvoie
 		return $truc_muche;
