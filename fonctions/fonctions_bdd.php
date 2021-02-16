@@ -4,7 +4,7 @@
  * Sert à se connecter à la BDD
  */
 function connectDB() {
-	include_once __DIR__ . '/../config/config_bdd.php';
+	include __DIR__ . '/../config/config_bdd.php';
 	
 	try {
 		// On crée un nouvel objet

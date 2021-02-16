@@ -9,8 +9,6 @@ include_once 'layout/header.php'; ?>
     <?php
     include_once 'fonctions/fonctions_bdd.php';
 
-    include_once 'fonctions/mes_fonctions.php';
-
     $variable_article = getArticle();
 
 
