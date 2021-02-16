@@ -4,7 +4,7 @@ include_once 'layout/header.php'; ?>
 
 <h1 class="mb-4">Créer un nouvel article</h1>
 
-<form action="creer-article-handler.php" method="post">
+<form action="creer-article-handler.php" method="post" enctype="multipart/form-data">
 	<div class="form-group">
 		<label for="titre">Titre</label>
 		<input type="text" class="form-control" name="titre" id="titre" aria-describedby="titre-help" placeholder="Titre" required autofocus>
@@ -12,10 +12,11 @@ include_once 'layout/header.php'; ?>
 	</div>
 
 
-	<div class="form-group">
-		<label for="image">Image</label>
-		<input type="url" class="form-control" name="image" id="image" aria-describedby="image-help" placeholder="Image" required>
-		<small id="image-help" class="form-text text-muted">L'URL qui pointe vers l'image d'illustration de l'article.</small>
+	<div class="custom-file form-group mb-4">
+		<label class="custom-file-label" for="image">Image</label>
+		<input type="hidden" name="MAX_FILE_SIZE" value="5242880">
+		<input type="file" class="custom-file-input" name="image" id="image" aria-describedby="image-help" placeholder="Image" required>
+		<small id="image-help" class="form-text text-muted">L'image d'illustration de l'article.</small>
 	</div>
 
 
