@@ -37,8 +37,8 @@ if (
 	$new_file_name = 'images/' . uniqid('article_') . '.' . $ext;
 
 	move_uploaded_file(
-		$_FILES['image']['tmp_name'], 
-		$new_file_name
+		$_FILES['image']['tmp_name'], 	// Ancien nom (chemin)
+		$new_file_name					// Nouveau nom (chemin)
 	);
 
 	$statement->bindParam(1, $_POST['titre']);
