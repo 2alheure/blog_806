@@ -15,7 +15,7 @@ if (!empty($_GET['id'])) {
 	$titre = $article['titre'] . ' | Mon super Blog';
 
 	include_once './layout/header.php';
-?>
+?> 
 
 
 	<img src="<?php echo $article['image']; ?>" alt="<?php echo $article['image_alt']; ?>" class="banner" />
