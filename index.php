@@ -6,7 +6,7 @@ if (!empty($_SESSION['pseudo'])) $pseudo = $_SESSION['pseudo'];
 else $pseudo = 'inconnu';
 
 ?>
-
+ 
 
 <div class="jumbotron">
     <h1 class="display-3">Mon super blog</h1>
